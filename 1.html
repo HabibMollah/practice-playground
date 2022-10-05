@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Real Estate Statistics</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			h2, p {
+				color: white;
+				font-family: Calibri;
+			}
+			h2 {
+				margin-bottom: 1.5rem;
+				line-height: 0;
+				font-size: 2rem;
+			}
+			p {
+				margin-top: 1.5rem;
+			}
+			#total {
+				background-color: black;
+			}
+			#sale {
+				background-color: cadetblue;
+			}
+			#rental {
+				background-color: coral;
+			}
+			.card {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				border-radius: 8px;
+				width: 18rem;
+				height: 7rem;
+			}
+			.cards {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 1rem;
+				position: relative;
+				top: 25%;
+				left: 25%;
+				
+			}
+			img {
+				padding: 0 1rem 0 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<section class="cards">
+				<div class="card" id="total">
+					<div><img src="images\real-estate-statistics\house-chimney.svg" alt=""></div>
+					<div>
+						<h2>510</h2>
+						<p>Properties in total</p>
+					</div>
+				</div>
+				<div class="card" id="sale">
+					<div><img src="images\real-estate-statistics\cart-plus.svg" alt=""></div>
+					<div>
+						<h2>510</h2>
+						<p>Properties in total</p>
+					</div>
+				</div>
+				<div class="card" id="rental">
+					<div><img src="images\real-estate-statistics\user-check.svg" alt=""></div>
+					<div>
+						<h2>510</h2>
+						<p>Properties in total</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Real estate statistics">
+			<img width="414px" src="images/reference/real-estate-statistics.png" alt="Real estate statistics" />
+		</section>
+	</body>
+</html>

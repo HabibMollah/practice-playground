@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Table</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'poppins';
+			}
+		
+			table {
+				border-collapse: collapse;
+				border-radius: 16px;
+				width: 100%;
+				overflow: hidden;
+			}
+			td, th {
+				border-color: #ddd;
+				border-width: 1px;
+				padding: 8px;
+				text-align: center;
+			}
+			h4, p, tfoot td {
+				text-align: left;
+				padding-left: 2rem;
+			}
+			h4 {
+				margin-bottom: -1rem;
+			}
+			p {
+				font-size: .9rem;
+				color: rgb(143, 143, 143);
+			}
+			thead th {
+				background-color: black;
+				color: #ddd;
+				letter-spacing: 1px;
+			}
+			tr {
+				border-style: solid;
+				border-color: #ddd;
+				border-width: 1px;
+				height: 5rem;
+			}
+			.green {
+				color: #73c64d;
+				font-weight: 700;
+				
+			}
+			.blue {
+				color: #299ff4;
+				font-weight: 700;
+				
+			}
+			.red {
+				color: #f55836;
+				font-weight: 700;
+			}
+				
+			
+			.red span {
+				background-color: #ffd4d4;
+				padding: .5rem 1.5rem;
+				border-radius: 20px;
+			}
+			.green span {
+				background-color: #e2f9dd;
+				padding: .5rem 1.5rem;
+				border-radius: 20px;
+			}
+			.blue span {
+				background-color: #d4edff;
+				padding: .5rem 1.5rem;
+				border-radius: 20px;
+			}
+		</style>
+	</head>
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<h1>Payouts</h1>
+
+			<div>
+				<table>
+					<thead>
+						<th>PAYEE</th>
+						<th>AMOUNT</th>
+						<th>DATE</th>
+						<th>STATUS</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td><h4>John Wick</h4><p>Shoota Inc</p></td>
+							<td>$42,272.23</td>
+							<td>Jan 13, 2022</td>
+							<td class="blue"><span>Processing</span></td>
+						</tr>
+						<tr>
+							<td><h4>Willem Dafoe</h4><p>Spider Inc</p></td>
+							<td>$27,221.00</td>
+							<td>Dec 07, 2021</td>
+							<td class="green"><span>Success</span></td>
+						</tr>
+						<tr>
+							<td><h4>Chuck Norris</h4><p>Roundhouse Inc</p></td>
+							<td>$6,982.00</td>
+							<td>Oct 20, 2021</td>
+							<td class="green"><span>Success</span></td>
+						</tr>
+						<tr>
+							<td><h4>Nick Cage</h4><p>Convicts Inc</p></td>
+							<td>$13,821.27</td>
+							<td>Oct 14, 2021</td>
+							<td class="red"><span>Reverted</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>Total Paid</td>
+							<td colspan="3">$90,296.95</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Table">
+			<img width="903px" src="images/reference/table.png" alt="Table" />
+		</section>
+	</body>
+</html>

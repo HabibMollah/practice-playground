@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Dashboard</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'Poppins';
+			}
+			div img {
+				width: 4rem;
+			}
+			span img, a img {
+				width: 1.2rem;
+				position: relative;
+				top: 4px;
+			}
+			h2 {
+				margin: 0;
+				padding: 0;
+			}
+			p {
+				margin: 0;
+			}
+			a {
+				text-decoration: none;
+				color: #3b4b59;
+				border: 1px solid #3b4b59;
+				padding: 0.2rem 1rem;
+				border-radius: 8px;
+				margin: 2rem 1rem;
+
+			}
+			span {
+				color: #70caa3;
+				margin-right: 0.5rem;
+				margin: 2rem 0;
+			}
+			.red {
+				color: red;
+			}
+			.learn {
+				display: flex;
+				gap: 2rem;
+			}
+			.card {
+				border: 1px solid #e7e9eb;
+				padding: 2rem;
+				height: 20rem;
+			}
+			.sub {
+				font-size: small;
+			}
+			a {
+				margin-top: 3rem;
+			}
+			.btn {
+				margin: 2rem 0rem;
+			}
+		</style>
+	</head>
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<h1>Dashboard</h1>
+
+			<div class="card">
+				<img src="/images/dashboard/icon-money.svg" alt=""><br>
+				<div>
+					<h2>$4502</h2>
+					<p>Earned this month</p>
+				</div>
+				<div class="sub">
+					<span><img src="/images/dashboard/icon-arrow-green.svg" alt="">+6.05%</span>than last month
+				</div>
+				<div class="btn">
+					<a href="">Earnings <img src="/images/dashboard/icon-arrow-right.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="card">
+				<img src="/images/dashboard/icon-sales.svg" alt=""><br>
+				<h2>22</h2>
+				<p>New sales</p>
+				<div class="sub">
+					<span><img src="/images/dashboard/icon-arrow-green.svg" alt="">+16.64%</span>than last month
+				</div>
+				<div class="btn">
+					<a href="">Sales <img src="/images/dashboard/icon-arrow-right.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="card">
+				<img src="/images/dashboard/icon-chat.svg" alt=""><br>
+				<h2>7</h2>
+				<p>New comments</p>
+				<div class="sub">
+					<span class="red"><img src="/images/dashboard/icon-arrow-red.svg" alt="">-19%</span>than last month
+				</div>
+				<div class="btn">
+					<a href="">Comments <img src="/images/dashboard/icon-arrow-right.svg" alt=""></a>
+				</div>
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Dashboard">
+			<img width="971px" src="images/reference/dashboard.png" alt="Dashboard" />
+		</section>
+	</body>
+</html>

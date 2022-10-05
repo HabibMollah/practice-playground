@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Order form</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			#name-email, #ft, #oadrs, #cty-st-zip, #clr-smpls, #tm-size, #cmnt {
+				display: flex;
+				justify-content:flex-start;
+				
+			}
+
+			#o-name, #o-email, #o-address1, #o-address2 {
+				padding: 1rem 6rem 1rem 0rem;
+				margin: 0.5rem 0.5rem 1rem 0rem;
+				
+			}
+			#o-address1 {
+				margin-right: 0.28rem;
+			}
+			#o-city, #o-state, #o-zip {
+				padding: 1rem 1.5rem 1rem 0rem;
+				margin: 0.5rem 0.5rem 1rem 0rem;
+			}
+			span {
+				position: absolute;
+				left: 30rem;
+			}
+		</style>
+	</head>
+	<body class="flip">
+		<section class="learn">
+			<form action="" method="get">
+			
+				<!-- Practice area start -->
+				<div id="name-email">
+					<div>
+						<label for="o-name">Name<br></label>
+						<input type="text" name="o-name" id="o-name">
+					</div>
+					<div>
+						<label for="o-email">Email address<br></label>
+						<input type="email" name="o-email" id="o-email">
+					</div>
+				</div>
+				<div id="oadrs">
+					<label for="o-address">Address<br>
+					<input type="text" name="o-address" id="o-address1">
+					<input type="text" name="o-address" id="o-address2"></label>
+				</div>
+				<div id="cty-st-zip">
+					<div><label for="o-city">City</label><br><input type="text" name="o-city" id="o-city"></div>
+					<div>
+						<label for="o-state">State<br>
+								<select id="o-state">
+								<option value="new york">new york</option>
+								<option value="washington">washington</option>
+								<option value="alabama">alabama</option>
+								<option value="massachusets">massachusets</option>
+								</select>
+						</label>
+					</div>
+					<div><label for="zip">ZIP</label><br><input type="text" name="zip" id="o-zip"></div>
+				</div>
+				<div id="clr-smpls">
+					<label for="clr-smpls">Which color samples should we send you? <br>
+					<input type="checkbox" name="clr-smpls" value="white" disabled> White
+					<input type="checkbox" name="clr-smpls" value="magenta"> Magenta
+					<input type="checkbox" name="clr-smpls" value="coral"> Coral
+					<input type="checkbox" name="clr-smpls" value="burgandy"> burgandy
+					<input type="checkbox" name="clr-smpls" value="charcoal"> Charcoal
+					</label>
+				</div>
+				<div id="tm-size">
+					<label for="tm-size">How large is your team?<br>
+						<input type="radio" name="tm-size" value="small-tm"> 1-5 people
+						<input type="radio" name="tm-size" value="medium-tm"> 6-10 people
+						<input type="radio" name="tm-size" value="large-tm"> 10+ people</label>
+					
+				</div>
+				<div id="cmnt">
+					<label for="cmnt">
+						Comments<br>
+						<textarea name="cmnt" cols="70" rows="10"></textarea>
+					</label>
+				</div>
+				<div id="ft">
+					<div><input type="checkbox" name="offer" id="offer"> Sign up for special offers</div>
+					<span><button>Place Order</button></span>
+				</div>
+			</form>	
+				<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Order form">
+			<img width="903px" src="images/reference/order-form.png" alt="Order form" />
+		</section>
+	</body>
+</html>

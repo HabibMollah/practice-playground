@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Hero</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+
+			* {
+				box-sizing: border-box;
+				font-family: 'Poppins';
+			}
+			header {
+				display: flex;
+				justify-content: space-between;
+				margin: 2rem 3rem 8rem 3rem ;
+			}
+			.bdy {
+				display: flex;
+				gap: 2rem;
+				align-items: center;
+			}
+			.hero img {
+				width: 100%;
+				margin-right: 7rem;
+			}
+			ul {
+				list-style: none;
+				display: flex;
+				gap: 2rem;
+				font-weight: 500;
+			}
+			h1 {
+				font-size: 300%;
+				margin-top: -1rem;
+				margin-bottom: 2rem;
+			}
+			.btn1, .btn2 {
+				text-decoration: none;
+				font-weight: 600;
+				border: 2px solid #61a4e3;
+				padding-top: .5rem;
+				padding-bottom: .5rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				
+			}
+			.btn1 {
+				border-radius: 100px;
+				height: 3.9rem;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				background-color: white;
+			}
+			.btn2 {
+				background-color: #61a4e3;
+				color: white;
+				border-radius: 100px;
+				
+			}
+			a img {
+				padding-left: .4rem;
+				position: relative;
+				top: .3rem;
+			}
+			#btn {
+				margin-top: 5rem;
+			}
+			.x {
+				color: #1dcc96;
+				font-weight: 700;
+			}
+			.y {
+				font-size: 1.5rem;
+			}
+			.btn-mbl {
+				display: none;
+			}
+			@media screen and (max-width: 1000px) {
+
+				nav, .btn1 {
+					display: none;
+				}
+				.btn-mbl {
+					display: inline-block;
+				}
+				.bdy {
+					display: grid;
+					grid-template-columns: 1fr;
+				}
+				.hero {
+					order: -1;
+				}
+
+			} 
+				
+				
+			
+		</style>
+	</head>
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<header>
+				<img src="/images/hero/logo-wally.svg" alt="">
+				<nav>
+					<ul>
+						<li>Discover Wally</li>
+						<li>Pricing</li>
+						<li>Abaout us</li>
+						<li>Contact</li>
+					</ul>
+				</nav>
+				
+				<a href="" class="btn1">Start Now<img src="/images/hero/arrow-right-color.svg" alt=""></a>
+				<a href="" class="btn-mbl"><img src="/images/hero/menu-dots.svg" alt=""></a>
+			</header>
+
+			<!-- Main body -->
+			
+			<div class="bdy">
+				<div class="bdy-txt">
+					<p class="x">SHOPPING MADE EASY</p>
+					<h1>Create your digital wallet in just a few clicks.</h1>
+					<p class="y">Add your cards and pay with your phone everywhere.<br>Convenience is the key.</p>
+					<div id="btn"><a href="" class="btn2">Buy it Now <img src="/images/hero/arrow-right-white.svg" alt=""></a></div>
+				</div>
+				<div class="hero"><img src="/images/hero/illustration.svg" alt=""></div>
+			</div>
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Hero">
+			<img width="1915px" src="images/reference/hero-desktop.png" alt="Hero" />
+			<img width="704px" src="images/reference/hero-mobile.png" alt="Hero" />
+		</section>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Contact form</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			* {
+				box-sizing: border-box;
+				font-weight: 600;
+				font-family: 'poppins';
+			}
+			div {
+				display: grid;
+				grid-template-columns: 1fr;
+				margin-bottom: 2rem;
+			}
+			
+			#name {
+				width: 20rem;
+				height: 3rem;
+			}
+			#email {
+				width: 20rem;
+				height: 3rem;
+			}
+			#dept {
+				width: 20rem;
+				height: 3rem;
+			}
+			button {
+				width: 20rem;
+				height: 3rem;
+				border-width: 0px;
+				border-radius: 5px;
+				background-color: dodgerblue;
+				color: white;
+				margin: 1rem 0 0 0;
+			}
+			input, textarea, select {
+				background-color: rgba(128, 128, 128, 0.116);
+				border-width: 0px;
+				border-radius: 5px;
+				width: 20rem;
+				margin-top: 0.5rem;
+				padding-inline: 1rem;
+				padding-block: 1rem;
+
+			}
+			input[placeholder] {
+				font-size: 1.3rem;
+			}
+			input:active {
+				border-color: white;
+				border-width: 0px;
+			}
+			option {
+				font-size: 1.3rem;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<img src="/images/contact-form/envelope.svg" alt="">
+
+			<h1>Let's get in touch</h1>
+
+			<form action="" method="get">
+				<div>
+					<label for="name">NAME</label>
+					<input type="text" name="name" id="name">
+				</div>
+				<div>
+					<label for="email">EMAIL ADDRESS</label>
+					<input type="email" name="email" id="email" placeholder="chuck@roundhouse.com">
+				</div>
+				<div>
+					<label for="dept"><span>Department</span> <br>
+						<select name="dept" id="dept" >
+							<option value="0" disabled selected>Select a dpt</option>
+							<option value="research">Research</option>
+							<option value="it">IT</option>
+							<option value="security">Seurity</option>
+						</select>
+					</label>
+				</div>
+				<div>
+					<label for="msg">MESSAGE <br>
+						<textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+					</label>
+				</div>
+				<div>
+					<button>
+						Send Message
+					</button>
+				</div>
+			</form>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Contact form">
+			<img width="560px" src="images/reference/contact-form.png" alt="Contact form" />
+		</section>
+	</body>
+</html>

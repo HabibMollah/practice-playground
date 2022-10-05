@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Login form</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			* {
+				box-sizing: border-box;
+				font-weight: 700;
+			}
+			div {
+				display: grid;
+				grid-template-columns: 1fr;
+				margin: 2rem 0rem;
+				max-width: 19rem;
+			}
+			label{
+				letter-spacing: 1px;
+				padding-bottom: 5px;
+			}
+			button {
+				background-color: darkblue;
+				color: white;
+				width: 19rem;
+				height: 2.5rem;
+				border-radius: 8px;
+				font-weight: 700;
+				letter-spacing: 1.5px;
+				word-spacing: .5rem;
+				font-size: 1rem;
+			}
+			#email, #pass {
+				padding: 1rem;
+				background-color: rgba(128, 128, 128, 0.226);
+				border-width: 0px;
+				border-radius: 8px;
+				font-size: 20px;
+				font-weight: 100;
+			}
+			input[type="checkbox"] {
+				margin-right: 1rem;
+				scale: 1.6;
+				background-color: black;
+				color: rgb(255, 0, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<h1>Sign with your credentials</h1>
+
+			<form action="" method="get">
+				<div>
+					<label for="email">EMAIL ADDRESS</label>
+						<input type="email" name="email" id="email">
+				</div>
+				<div>
+					
+					<label for="pass">PASSWORD</label>
+						<input type="password" name="pass" id="pass">
+				</div>
+				<div>
+					<label for="rmbr"><input type="checkbox" name="rmbr" id="rmbr" >  REMEMBER ME</label>
+				</div>
+				<button>Sign In</button>
+			</form>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Login form">
+			<img width="498px" src="images/reference/login-form.png" alt="Login form" />
+		</section>
+	</body>
+</html>

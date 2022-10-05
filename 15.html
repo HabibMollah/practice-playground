@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Characters</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+
+			* {
+				box-sizing: border-box;
+				font-family: 'Poppins';
+			}
+
+			.info {
+				display: flex;
+				gap: 3rem;
+			}
+
+			h2 {
+				margin-bottom: 1rem;
+			}
+
+			.card1, .card2, .card3 {
+				width: 561px;
+				height: 297px;
+				border-radius: 10px;
+			} 
+			.card1 {
+				background-image: url('/images/characters/bg-elephant.jpg');
+				background-size: 100%;
+			}
+			.card2 {
+				background-image: url('/images/characters/bg-cat.jpg');
+				background-size: 100%;
+			}
+			.card3 {
+				background-image: url('/images/characters/bg-bunny.jpg');
+				background-size: 100%;
+			}
+			h2, .info {
+				position: relative;
+				top: 6rem;
+				left: 16rem;
+			}
+			h2 {
+				margin-bottom: 0;
+				font-weight: 700;
+			}
+			h3 {
+				margin-bottom: -1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<div>
+				<div class="card1">
+					<h2>The Viking</h2>
+					<div class="info">
+						<div class="win"><h3>68%</h3><p>Win Rate</p></div>
+						<div class="matches"><h3>522</h3><p>Games Played</p></div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="card2">
+					<h2>The Sorcerress</h2>
+					<div class="info">
+						<div class="win"><h3>68%</h3><p>Win Rate</p></div>
+						<div class="matches"><h3>522</h3><p>Games Played</p></div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="card3">
+					<h2>The Fashionista</h2>
+					<div class="info">
+						<div class="win"><h3>68%</h3><p>Win Rate</p></div>
+						<div class="matches"><h3>522</h3><p>Games Played</p></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Characters">
+			<img width="720px" src="images/reference/characters.png" alt="Characters" />
+		</section>
+	</body>
+</html>
