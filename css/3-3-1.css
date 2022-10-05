@@ -1,0 +1,18 @@
+.card {
+    border-radius: 8px;
+    font-family: fantasy;
+    color: white;
+    background-color: gray;
+}
+* {
+    box-sizing: border-box;
+}
+#total {
+    background-color: navy
+}
+#sale {
+    background-color: darkcyan;
+}
+#rental {
+    background-color: darkorange;
+}

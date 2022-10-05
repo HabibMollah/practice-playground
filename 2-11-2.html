@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners: Example 2-11-2</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+	</head>
+
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<h1>Your Order</h1>
+
+			<form action="" method="get">
+
+				<div>
+					
+					<div>
+						<label for="order-name">Name</label>
+						<input type="text" name="order-name" id="order-name" maxlength="10" placeholder="Your full name (max 10)" autofocus>
+					</div>
+
+					<div>
+						<label for="order-email">Email address</label>
+						<input type="email" name="order-email" id="order-email" disabled value="chuck@roundhouse.com">
+					</div>
+
+				</div>
+
+				<div>
+					<label for="order-address">Address</label>
+					<input type="text" name="order-address" id="order-address" placeholder="9 Augusta Street">
+					<input type="text" name="order-address" placeholder="Suite 122">
+				</div>
+
+				<div>
+					<div>
+						<label for="city">City</label>
+						<input type="text" name="city" id="city">
+					</div>
+					<div>
+						<label for="state">State
+							<select name="state" id="state">
+								<option value="New York">New York</option>
+								<option value="Washington">Washington</option>
+								<option value="Texas">Texas</option>
+								<option value="Aalabama">Aalabama</option>
+							</select>
+						</label>
+					</div>
+					<div>
+						<label for="zip">ZIP</label><input type="text" name="zip" id="zip">
+					</div>
+				</div>
+
+				<div>
+					<label for="colors">What colors samples should we send you?
+					<input type="checkbox" name="colors" id="colors" value="White" disabled>White
+					<input type="checkbox" name="colors" id="colors" value="Magenta" checked>Magenta
+					<input type="checkbox" name="colors" id="colors" value="Coral">Coral
+					<input type="checkbox" name="colors" id="colors" value="Burgandy" checked>Burgandy
+					<input type="checkbox" name="colors" id="colors" value="Charcoal">Charcoal
+					</label>
+				</div>
+
+				<div>
+					<label for="team-size">How large is your team?</label>
+						<input type="radio" name="team-size" id="team=size" value="1-5">1-5 people
+						<input type="radio" name="team-size" id="team=size" value="6-10">6-10 people
+						<input type="radio" name="team-size" id="team=size" value="10+">10+ people
+
+					
+				</div>
+
+				<div>
+					<label for="comments">Comments</label>
+					<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+				</div>
+
+				<div>
+					<label for="sign-up-for-offers">
+						<input type="checkbox" name="sign-up-for-offers" id="sign-up-for-offers" value="offer">Sign up for special offers
+					</label>
+
+					<button>Place Order</button>
+				</div>
+			</form>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="lesson 2-11: Using Forms and Buttons">
+			<img width="903px" src="images/reference/order-form.png" alt="Reference image" />
+		</section>
+	</body>
+</html>
